@@ -26,8 +26,15 @@
     		display: flex;
     	}
     	.panel-body {
-    		max-height: 80vh;
+    		max-height: 75vh;
     		overflow-y: scroll;
+    	}
+    	.alert-info, #alertmood, #alertdate, #alertdateset, #alertdateseriously {
+    		display: none;
+    	}
+    	pre {
+    		background-color: inherit;
+    		border: none;
     	}
     </style>
 
@@ -49,21 +56,42 @@
 				</ul>
 			</div>
 			<div class="col-md-3"></div>
-			<hr>
 
 			<div class="col-md-6">
 				<hr>
-	  		<div class="row">
+				<div class="row">
+					<div class="col-md-10">
+						<div class="input-group">
+						  <span class="input-group-addon" id="basic-addon1">Start Date</span>
+						  <input type="text" class="form-control" placeholder="YYYY-MM-DD" aria-describedby="basic-addon1">
+						</div>
+					</div>
+					<div class="col-sm-2">
+						<button type="button" id="date" class="btn btn-default btn-primary">Set date</button>
+					</div>
+				</div>
+				<p>
+					<div id="alertdate" class="alert alert-danger" role="alert">Date is not set correctly. Use YYYY-MM-DD</div>
+					<div id="alertdateset" class="alert alert-success" role="alert">Date set successfully</div>
+					<div id="alertdateseriously" class="alert alert-danger" role="alert">Seriously? :) Are you a time-traveler?</div>
+				</p>
+				<hr>
+
+	  		<div id="moods" class="row">
 		  		<div class="btn-group" role="group">
-					  <button type="button" class="btn btn-default btn-warning">Rad</button>
-					  <button type="button" class="btn btn-default btn-success">Good</button>
-					  <button type="button" class="btn btn-default btn-info">Meh</button>
-					  <button type="button" class="btn btn-default btn-primary">Bad</button>
-					  <button type="button" class="btn btn-default btn-danger">-7</button>
+					  <button type="button" class="btn btn-default">Rad</button>
+					  <button type="button" class="btn btn-default">Good</button>
+					  <button type="button" class="btn btn-default">Meh</button>
+					  <button type="button" class="btn btn-default">Bad</button>
+					  <button type="button" class="btn btn-default">-7</button>
 					</div>
 				</div>
 
-	  		<div class="row">
+				<p>
+					<div id="alertmood" class="alert alert-danger" role="alert">Mood is not set</div>
+				</p>
+
+	  		<div id="activities" class="row">
 					<div class="btn-group" role="group">
 					  <button type="button" class="btn btn-default">Growth</button>
 					  <button type="button" class="btn btn-default">Schoolwork</button>
@@ -93,29 +121,21 @@
 					  <button type="button" class="btn btn-default">Love</button>
 					</div>
 				</div>
-				<hr>
-
 				<p>
-					<div class="input-group">
-					  <span class="input-group-addon" id="basic-addon1">Start Date</span>
-					  <input type="text" class="form-control" placeholder="YYYY-MM-DD" aria-describedby="basic-addon1">
-					</div>
+					<button type="button" id="submit" class="btn btn-primary">Next day</button>
 				</p>
-				<p>
-					<button type="button" class="btn btn-danger">Next day</button>
-				</p>
-				<div class="alert alert-danger" role="alert">You have an error</div>
 				<hr>
 			</div>
 
 			<div class="col-md-6">
+				<div class="alert alert-info" role="alert">Copied to clipboard</div>
 				<div class="panel panel-default">
 				  <div class="panel-heading">Here is your .json data</div>
-				  <div class="panel-body">
-				  </div>
-  				<div class="panel-footer"><button type="button" class="btn btn-primary">Copy to clipboard</button></div>
-				</div>
+				  <pre class="panel-body"></pre>
+				<div class="panel-footer"><button type="button" id="copy" class="btn btn-primary">Copy to clipboard</button></div>
+  			</div>
 			</div>
+
 		</div>
   </body>
 </html>
