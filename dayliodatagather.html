@@ -1,10 +1,9 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <!-- Some addititonal tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, minimum-scale=1">
-
-    <!-- Some addititonal tags -->
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
 
 	  <!-- Latest compiled and minified CSS -->
@@ -14,9 +13,6 @@
 			  src="https://code.jquery.com/jquery-3.3.1.min.js"
 			  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
 			  crossorigin="anonymous"></script>
-
-		<!-- Latest compiled and minified JavaScript -->
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
     <script src="dayliodatagather.js"></script>
 
@@ -29,7 +25,7 @@
     		max-height: 75vh;
     		overflow-y: scroll;
     	}
-    	.alert-info, #alertmood, #alertdate, #alertdateset, #alertdateseriously {
+    	.alert-info, #alertmood, #alertdate, #alertdateset, #alertdateseriously, #dldLink {
     		display: none;
     	}
     	pre {
@@ -128,11 +124,16 @@
 			</div>
 
 			<div class="col-md-6">
-				<div class="alert alert-info" role="alert">Copied to clipboard</div>
+				<div id="alert-copy" class="alert alert-info" role="alert">Copied to clipboard</div>
+				<div id="alert-download" class="alert alert-info" role="alert">Downloaded</div>
 				<div class="panel panel-default">
 				  <div class="panel-heading">Here is your .json data</div>
 				  <pre class="panel-body"></pre>
-				<div class="panel-footer"><button type="button" id="copy" class="btn btn-primary">Copy to clipboard</button></div>
+				<div class="panel-footer">
+					<button type="button" id="copy" class="btn btn-primary">Copy to clipboard</button>
+					<button type="button" id="json" class="btn btn-primary">Download as .json</button>
+					<a id="dldLink" download="dayliodata.json"></a>
+				</div>
   			</div>
 			</div>
 
