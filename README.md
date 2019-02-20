@@ -13,10 +13,10 @@ So, I'll add it manualy to a **.json**, because I can.
  - Bootstrap 3.3.7
  - jQuery
 
-# Haggling Challenge
+## Haggling Challenge
 This is my application to Hola's [Haggling Challenge]
 
-# Mostly adequate guide
+## Mostly adequate guide
 My implementations of the exercises in [Mostly adequate guide to FP]
 
 [DaylioData]: https://vanntile.github.io/javascript-test/daylio_data/dayliodatagather.html
