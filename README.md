@@ -16,6 +16,9 @@ So, I'll add it manualy to a **.json**, because I can.
 # Haggling Challenge
 This is my application to Hola's [Haggling Challenge]
 
+# Mostly adequate guide
+My implementations of the exercises in [Mostly adequate guide to FP]
 
 [DaylioData]: https://vanntile.github.io/javascript-test/daylio_data/dayliodatagather.html
 [Haggling Challenge]: https://github.com/hola/challenge_haggling
+[Mostly adequate guide to FP]: https://github.com/MostlyAdequate/mostly-adequate-guide
