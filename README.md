@@ -1,9 +1,11 @@
 # javascript-test
-While I'm relearning stuff, I'll test it here
+This is the sandbox where I test funny or educational JavaScript pieces.
 
 # Projects
 ## Daylio Data Gather
-[This] is a project to help me get the data from a mood diary app which won't give me my own data, saved on my Drive. I can access it only by app. So, I'll add it manualy to a **.json**, because I can.
+[DaylioData] is a project to help me get the data from a mood diary app which
+won't give me my own data, saved on my Drive. I can access it only by app.
+So, I'll add it manualy to a **.json**, because I can.
 ### Files
  - dayliodatagather.html
  - dayliodatagather.js
@@ -11,6 +13,9 @@ While I'm relearning stuff, I'll test it here
  - Bootstrap 3.3.7
  - jQuery
 
+# Haggling Challenge
+This is my application to Hola's [Haggling Challenge]
 
 
-[This]: https://vanntile.github.io/javascript-test/dayliodatagather.html
+[DaylioData]: https://vanntile.github.io/javascript-test/daylio_data/dayliodatagather.html
+[Haggling Challenge]: https://github.com/hola/challenge_haggling
