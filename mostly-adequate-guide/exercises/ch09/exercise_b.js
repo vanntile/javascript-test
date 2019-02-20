@@ -11,4 +11,9 @@
 // basename from a filepath.
 
 // logFilename :: IO ()
-const logFilename = undefined;
+const logFilename = compose(
+  chain(pureLog),
+  map(last),
+  map(split('/')),
+  getFile
+);
