@@ -6,7 +6,7 @@
 //   intercalate :: String -> [String] -> String
 
 // strToList :: String -> [Char]
-const strToList = undefined;
+const strToList = s => s.split('');
 
 // listToStr :: [Char] -> String
-const listToStr = undefined;
+const listToStr = curry(intercalate(''));
