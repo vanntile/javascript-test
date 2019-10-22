@@ -2,6 +2,20 @@
 This is the sandbox where I test funny or educational JavaScript pieces.
 
 # Projects
+## Typescript router
+A small typescript router as a self-executing function that can manage a 
+single-page-application in less than 50 lines. Just add the routes:
+```ts
+Router.add({ route: '/', path: "templates/homepage.html", name: "Homepage" });
+Router.add({ route: '/feature', path: "templates/feature.html", name: "Feature" });  
+```
+
+Afterwards, you can just compile the typescript and run the server:
+```sh
+tsc router.ts
+live-server
+```
+
 ## Daylio Data Gather
 [DaylioData] is a project to help me get the data from a mood diary app which
 won't give me my own data, saved on my Drive. I can access it only by app.
